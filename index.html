@@ -7,8 +7,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,100,300;0,100,400;0,100,600;0,100,700;0,100,900;1,100,400&family=Bebas+Neue&display=swap" rel="stylesheet">
 
 <!-- Firebase SDK -->
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyC-zazvTyVq6SbEkTbq-N8iappxq6pKgvo",
+    authDomain: "empowerbattlecry.firebaseapp.com",
+    projectId: "empowerbattlecry",
+    storageBucket: "empowerbattlecry.firebasestorage.app",
+    messagingSenderId: "526659314414",
+    appId: "1:526659314414:web:a8f044ecca2243a2ec09ff",
+    measurementId: "G-DMDW6PWN0R"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 
 <style>
 :root{
